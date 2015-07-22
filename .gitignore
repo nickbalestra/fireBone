@@ -1,24 +1,37 @@
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
-*.so
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
 
-# Folders
-_obj
-_test
+# Thumbnails
+._*
 
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
 
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
+.floo
 
-_testmain.go
+### Node ###
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
 
-*.exe
-*.test
-*.prof
+
+pids
+logs
+results
+
+
+### NPM ###
+npm-debug.log
+node_modules
+
+bower_components
+client/bower_components
