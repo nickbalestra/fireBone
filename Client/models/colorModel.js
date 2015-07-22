@@ -2,7 +2,7 @@ var Color = Backbone.Model.extend({
   idAttribute: 'hexColor',
 
   initialize: function(){
-    var randomHex = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    var randomHex = Please.make_color({base_color: 'cyan'});
     this.set('hexColor', randomHex);
 
   }
