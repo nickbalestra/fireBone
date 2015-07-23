@@ -10,10 +10,10 @@ var AppView = Backbone.View.extend({
   },
 
   render: function(){
-    $view = this.$el.html('<div class="addColor"><span>Moar Cyans<span></div>');
+    $view = this.$el.html('<div class="addColor"><span>Gimme moar<span></div><div id="colors"></div>');
 
     this.collection.each(function(color){
-      $view.append(this.template(color.attributes));
+      $view.find('#colors').prepend(this.template(color.attributes));
     }, this);
 
     return $view;
