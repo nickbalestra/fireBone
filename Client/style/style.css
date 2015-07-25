@@ -9,6 +9,10 @@ body, html {
   font-size: 14px;
 }
 
+#remove, #reset {
+  margin-left: 15px;
+}
+
 .row > span {
   color: #666;
   color: rgba(255,255,255,.65);
@@ -31,8 +35,3 @@ body, html {
   cursor: pointer;
 }
 
-.addColor {
-  position: fixed;
-  width:100%;
-  background-color: #fff;
-}

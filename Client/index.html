@@ -5,9 +5,13 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery/jquery.min.js"></script>
   <script src="bower_components/underscore/underscore-min.js"></script>
   <script src="bower_components/backbone/backbone-min.js"></script>
+
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/backbonefire/dist/backbonefire.js"></script>
+
   <script src="bower_components/pleasejs/dist/Please.js"></script>
 
   <script src="models/colorModel.js"></script>
@@ -15,7 +19,7 @@
   <script src="views/appView.js"></script>
   <script>
     $(function(){
-      var colors = new Backbone.Collection(new Color(), {model: Color});
+      var colors = new Colors();
       var app = new AppView({collection: colors});
       $('body').append(app.render());
     });
